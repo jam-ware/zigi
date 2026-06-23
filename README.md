@@ -60,7 +60,7 @@ Be sure to follow the instructions provided by Rocket Software to update the `PA
 
 Another available port of Git is from the [zopen community](https://zopen.community/) project. They provide an installer called `zopen` which you will need to download from [https://zopen.community/#/Guides/QuickStart](https://zopen.community/#/Guides/QuickStart). 
 
-Once the `zopen` installer is installed, you will need to execute the `zopen-config` script found in the installation directory `mountpoint/etc`. At that point, you can run the command `open install git` and follow the prompts to install Git along with any pre-reqs and co-reqs.
+Once the `zopen` installer is installed, you will need to execute the `zopen-config` script found in the installation directory `mountpoint/etc`. At that point, you can run the command `zopen install git` and follow the prompts to install Git along with any pre-reqs and co-reqs.
 
 #### Setting up your environment
 

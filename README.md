@@ -4,7 +4,7 @@
 
 `zigi` is the z/OS ISPF Git Interface and is designed for use by the experienced ISPF developer who needs to interact with a Git hosted source. The installation of `zigi` requires that you have downloaded the `zigi` installer, which you obviously have or you wouldn't be reading this.
 
-  - The main requirement for using this interface is to install a ported version of Git for z/OS. 
+  - The main requirement for using this interface is to install a ported version of Git to z/OS. 
 
 
 ## Index
@@ -74,7 +74,7 @@ After you've done this step, you're good to go - each time your UNIX (USS/OMVS) 
 
 **Example:** `ZOPEN_ROOTFS="/isv/zopen"` 
 
-Since you wish to also use this package with `zigi`, there is also one more step:
+Since you wish to also use this package with `zigi`, there is one more step:
 
 #### The zigi Environment File
 
@@ -108,13 +108,13 @@ IBM Open Enterprise Foundation for z/OS provides a comprehensive suite of open s
 2. Determine and mount the FOZ zFS dataset to USS (if not already mounted). 
   - **Note:** It is also useful to add an entry to your member `BPXPRM` in PARMLIB if you haven't already, so that this zFS dataset containing Git and the other open source utilities are automounted to USS (UNIX) after IPLs.
 
-3. Load into the UNIX environment via OMVS (TSO `omvs` command), and `cd` into the directory containing the IBM Open Enterprise Foundation for z/OS packages (your mountpoint path). For example:
+3. Load into the UNIX environment via OMVS (TSO `omvs` command), and `cd` into the directory containing the IBM Open Enterprise Foundation for z/OS packages (your mountpoint path). **For example:**
 ```bash
 cd /usr/lpp/IBM/foz/
 ```
 
   - We do this to ensure that the `git` command (binary) and libraries are present and available within the mounted zFS dataset. 
-  
+ 
 4. Enter the following command to execute the environment script, which loads the necessary environment variables for actually using the FOZ package (including the `git` command):
 ```
 . ./.env
